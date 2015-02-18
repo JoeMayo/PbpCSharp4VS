@@ -1,0 +1,21 @@
+﻿@model WebAppDemo.Models.MenuModel
+
+<h1>@Model.MenuName</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var meal in Model.Meals)
+    {
+        <tr>
+            <td>@meal.ID</td>
+            <td>@meal.Name</td>
+        </tr>
+    }
+    </tbody>
+</table>
